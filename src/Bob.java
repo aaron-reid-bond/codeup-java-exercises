@@ -20,7 +20,7 @@ public class Bob {
                 System.out.println("Whatever.");
             }
 
-            if (user.equals("stop")) {
+            if (user.equalsIgnoreCase("stop")) {
                 break;
             }
         }
