@@ -9,7 +9,7 @@ public class HighLow {
         System.out.println("lets play a game. guess a number between 1-100!");
 
         Random rand = new Random();
-        int upperbound = 10;
+        int upperbound = 100;
         int int_random = rand.nextInt(upperbound);
 
         boolean again = true;
