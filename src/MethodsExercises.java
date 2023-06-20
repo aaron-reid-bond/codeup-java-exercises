@@ -114,40 +114,6 @@ public class MethodsExercises {
     }
 
 
-    public static void game(){
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("lets play a game. guess a number between 1-100!");
-
-        Random rand = new Random();
-        int upperbound = 10;
-        int int_random = rand.nextInt(upperbound);
-
-        boolean again = true;
-
-        while (again) {
-            System.out.println("Whats your number:");
-            int user = scanner.nextInt();
-
-            if (user < int_random) {
-                System.out.println("Nope, Higher!");
-            } else if (user > int_random) {
-                System.out.println("Nope, Lower!");
-            } else if (user == int_random) {
-                System.out.println("GOOD GUESS!");
-                System.out.println("Thanks for playing!");
-                again = false;
-            }
-        }
-        System.out.println("Again?");
-        scanner.nextLine();
-        String gameAgain = scanner.nextLine();
-        if (gameAgain.equalsIgnoreCase("yes")) {
-            game();
-        }
-    }
-
-
     public static void main(String[] args) {
 //        System.out.println(addition(5,2));
 //        System.out.println(subtraction(5,2));
@@ -156,8 +122,7 @@ public class MethodsExercises {
 //        System.out.println(mod(5,2));
 //        getInteger(1,10);
 //        factorial(1,10);
-//        dice();
-        game();
+        dice();
 
     }
 }
