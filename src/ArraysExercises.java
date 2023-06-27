@@ -17,7 +17,6 @@ public class ArraysExercises {
         Person person1 = new Person("Abe");
         Person person2 = new Person("Kenny");
         Person person3 = new Person("Paul");
-        Person person4 = new Person("Evia");
 
         people[0] = person1;
         people[1] = person2;

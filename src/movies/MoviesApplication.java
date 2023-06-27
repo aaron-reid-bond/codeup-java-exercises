@@ -2,21 +2,16 @@ package movies;
 
 import util.Input;
 
-import java.util.Arrays;
-
-import static movies.MoviesArray.findAll;
-
 public class MoviesApplication {
 
-    public static Movie[] list = findAll();
+    public static Movie[] list = MoviesArray.findAll();
 
     public static void main(String[] args) {
-        Input in = new Input();
-        System.out.println("Hello, welcome to my movie application!");
+        System.out.println("Hello, welcome to my movie app!");
         int userInput = 6;
         while (userInput != 0) {
             menu();
-            userInput = in.getInt();
+            userInput = Input.getInt();
             user(userInput);
         }
     }
