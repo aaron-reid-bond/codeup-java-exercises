@@ -37,13 +37,13 @@ public class GradesApplication {
         System.out.println();
         System.out.println("Here are the GitHub usernames of our students:");
         System.out.println();
-        for (String username : students.keySet()) {
-            System.out.print("| " + username + " |   ");
-        }
-        System.out.println();
-        System.out.println();
 
         while (true) {
+            for (String username : students.keySet()) {
+                System.out.print("| " + username + " |   ");
+            }
+            System.out.println();
+            System.out.println();
             System.out.print("What student would you like to see more information on?");
             System.out.println();
             String username = Input.getString();
